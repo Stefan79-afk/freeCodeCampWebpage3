@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+
+<style>
+
+@media (max-width: 500px) 
+{
+    main
+    {
+        font-size: 18px;
+    }
+}
+
+body
+{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2vmin;
+    background-color: #3A3B3C;
+    color: white;
+    
+}
+
+
+#header
+{
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: gray;
+    width: 100%;
+    margin-left: -8px;
+    margin-top:-8px;
+    height:auto;
+}
+
+#nav-bar
+{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 60%;
+}
+
+#header-img
+{
+    width: 5vmin;
+    height: auto;
+    margin-left: 10px;
+    margin-right: 5px;
+}
+#form
+{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    padding: 1%;
+    margin:auto;
+}
+
+#submit
+{
+    width: 25%;
+    margin: auto;
+}
+
+
+#logo
+{
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+label
+{
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+    margin: auto;
+    padding: 2%;
+    text-align: center;
+    align-items: center;
+    margin-bottom: 1%;
+}
+
+#email
+{
+    margin-left: 10px;
+    width: 60%;
+    padding: 1%;
+    background-color: black;
+    color: white;
+    font-size: 100%;
+
+}
+
+#submit
+{
+    background-color: lightgreen;
+    border: 1% solid transparent;
+    padding: 1%;
+    border-radius: 20px;
+}
+
+#legend
+{
+    white-space: nowrap;
+}
+
+#policy
+{
+    text-align: center;
+    background-color: #000026;
+    width: 90%;
+    border: 10% solid transparent;
+    border-radius: 20px;
+    margin: auto;
+    padding: 2%;
+}
+
+#policy header
+{
+    font-size: 200%;
+    color: lightcoral;
+}
+
+#video
+{
+    margin: 3vh 6.5vw 3vh 8vw;
+    width: 80vw;
+    height: 35vmax;
+}
+
+#plans
+{
+    display: flex;
+    background: darkred;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+
+}
+footer
+{
+    margin-top: 3vmin;
+    text-align: center;
+}
+
+#i1
+{
+    height: auto;
+    width: 19vw;
+}
+
+#i2
+{
+    height: auto;
+    width: 19vw;
+}
+#i3
+{
+    height: auto;
+    width: 22vw;
+}
+
+.nav-link
+{
+    color: darkred;
+    text-decoration: none;
+    font-style: normal;
+}
+</style>
+
+<html>
+
+<head>
+    <title>Laptop</title>
+</head>
+
+<body>
+    <main>
+        <header id = "header">
+            <div id = "logo">
+                <img id = "header-img" src = "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Apple_logo_black.svg/1724px-Apple_logo_black.svg.png">
+                <h1>Mac Books</h1>
+            </div>
+
+            <nav id = "nav-bar">
+                <a class = "nav-link" href = "#form">Email</a>
+                <a class = "nav-link" href = "#policy">Policy</a>
+                <a class = "nav-link" href = "#video">Product Presentation</a>
+                <a class = "nav-link" href = "#plans">Plans</a>
+            </nav>
+
+        </header>
+
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+
+        <form id = "form" action = "https://www.freecodecamp.com/email-submit">
+            <label for = "email">
+                <p id = "legend">Enter your email to receive news about our products:</p>
+                <input id = "email" type = "email" placeholder = "example@domain.com">
+            </label>
+            <input id = "submit" type = "submit">
+        </form>
+
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <article id = "policy">
+            <section>
+                <header>
+                    <h3>Refund</h3>
+                </header>
+                <p>You have the right to request a refund within 14 days since the purchase, for whatever reason, as long as the product in question is in good condition.</p>
+            </section>
+
+            <section>
+                <header>
+                    <h3>Warranty</h3>
+                </header>
+
+                <p>Every product comes with a standard warranty of 1 year. A bonus 1-year warranty can be purchased for 39.99$, for a maximum of 2 purchases (meaning a maximum warranty of 3 years in total).</p>
+            </section>
+
+            <section>
+                <header>
+                    <h3>Quality Assurance</h3>
+                </header>
+
+                <p>If you received a broken product, you have the right to request to have it either repaired, replaced or refunded withing 72 hours since the purchase.</p>
+            </section>
+        </article>
+
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+
+        <iframe id = "video" src = "https://www.youtube.com/embed/hs1HoLs4SD0">
+        </iframe>
+
+
+        <br>
+        <br>
+        <br>
+        <article id = "plans">
+            <section>
+                <header>
+                    <h4>MacBook Pro</h4>
+                    <img id = "i1" src = "https://www.apple.com/v/macbook-air/k/images/overview/macbook_air__cvqhw0f6aq82_large.jpg">
+                </header>
+
+                <p> 
+                    <strong>$999 or $83.25/month for 12 months</strong><br>
+
+                    <ul>
+                        <li>13.3-inch Retina display</li> 
+                        <li>Apple M1 chip </li>
+                        <li>Up to 16GB memory</li> 
+                        <li>Up to 2TB storage </li>
+                        <li>Up to 18 hours battery life </li>
+                        <li>Touch ID </li>
+                    </ul>
+                    
+                </p>
+                
+            </section>
+
+            <section>
+                <header>
+                    <h4>MacBook Pro 13"</h4>
+                    <img id = "i2" src = "https://www.apple.com/v/macbook-air/k/images/overview/macbook_pro_13__dyvyq7bfsrau_large.jpg">
+                </header>
+
+                <p>
+                    <strong>$1299 or $108.25/month for 12 months</strong><br>
+
+                    <ul>
+                        <li>13.3-inch Retina display</li>
+                        <li>Apple M1 chip</li>
+                        <li>Also available with Intel Core i5 or i7 processor</li>
+                        <li>Up to 16GB memory </li>
+                        <li>Up to 2TB storage</li> 
+                        <li>Up to 20 hours battery life </li>
+                        <li>Touch Bar and Touch ID </li>
+                    </ul>
+                </p>
+            </section>
+
+            <section>
+                <header>
+                    <h4>MacBook 16"</h4>
+                    <img id = "i3" src = "https://www.apple.com/v/macbook-air/k/images/overview/macbook_pro_16__gftycg348kii_large.jpg">
+                </header>
+
+                <p>
+                    <strong>From $2399 or $199.91/month for 12 months</strong><br>
+                
+                    <ul>
+                        <li>16-inch Retina display</li>
+                        <li>Intel Core i7 or i9 processor</li>
+                        <li>Up to 64GB memory</li>
+                        <li>Up to 8TB storage</li>
+                        <li>Up to 11 hours battery life</li>
+                        <li>Touch Bar and Touch ID</li>
+                    </ul>
+                </p>
+            </section>
+        </article>
+
+        <footer id = "wtv">
+            Copyright &copy2021 blah blah blah...
+        </footer>
+
+    </main>
+
+</body>
+
+</html>
